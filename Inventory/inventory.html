@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: aquamarine;
+    }
+
+    #boxes {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[type="text"] {
+        width: 15rem;
+        border-radius: 8px;
+        height: 1.5rem;
+        border-color: 0.5px lightblue;
+        padding: 5px;
+    }
+
+    input[type="button"] {
+        width: 8rem;
+        border-radius: 8px;
+        outline: none;
+        background-color: blue;
+        color: white;
+        height: 2rem;
+        font-weight: bolder;
+    }
+
+    input[type="button"]:hover {
+        cursor: pointer;
+
+    }
+
+    #display {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    #li_id {
+        list-style-type: none;
+    }
+
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <h1>INVENTORY LIST</h1>
+    <div id="boxes">
+        <input type="text" id="inplist">
+        <input type="button" id="inpbtn" value="SUBMIT">
+        <p id="message"></p>
+    </div>
+    <div id="display">
+        <ul id="li_id">
+        </ul>
+    </div>
+
+</body>
+<script src="inventory.js"></script>
+
+</html>
